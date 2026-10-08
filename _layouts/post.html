@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <span class="dot">&middot;</span>
+      <span>{% include reading-time.html content=content %}</span>
+    </div>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {%- if page.description -%}<p class="post-lede">{{ page.description | escape }}</p>{%- endif -%}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+  <footer class="post-footer">
+    <a class="back-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">&larr;</span> All posts</a>
+    <a class="back-link" href="https://x.com/{{ site.x_username }}" target="_blank" rel="noopener">Follow on X <span aria-hidden="true">&rarr;</span></a>
+  </footer>
+</article>

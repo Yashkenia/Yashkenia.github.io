@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-tagline">{{ site.description | escape }}</p>
+    <ul class="footer-links">
+      <li><a href="https://x.com/{{ site.x_username }}" target="_blank" rel="me noopener">{% include icons.html name="x" %}<span>@{{ site.x_username }}</span></a></li>
+      <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="me noopener">{% include icons.html name="github" %}<span>{{ site.github_username }}</span></a></li>
+      <li><a href="{{ '/feed.xml' | relative_url }}">{% include icons.html name="rss" %}<span>RSS</span></a></li>
+    </ul>
+    <p class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.author }}. Built with Jekyll on GitHub Pages.</p>
+  </div>
+</footer>

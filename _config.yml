@@ -1,0 +1,53 @@
+# Site settings
+title: "Yash | VAporX"
+brand: "Yash"
+description: "Exploit dev, AI bots, and Counter-Strike. Learning in public."
+author: Yash
+url: "https://yashkenia.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Kolkata
+
+# Social (used in nav/footer and SEO)
+x_username: VAporXdc
+github_username: Yashkenia
+twitter:
+  username: VAporXdc
+social:
+  name: Yash
+  links:
+    - https://x.com/VAporXdc
+    - https://github.com/Yashkenia
+
+# Build (works with GitHub Pages' built-in Jekyll build, no Actions needed)
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /:year/:month/:day/:title/
+words_per_minute: 200
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache

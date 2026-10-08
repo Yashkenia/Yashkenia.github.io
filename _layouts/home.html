@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="eyebrow">// learning in public</p>
+  <h1 class="hero-title">{{ site.brand | default: site.title | escape }}</h1>
+  <p class="hero-tagline">{{ site.description | escape }}</p>
+</section>
+
+{{ content }}
+
+<section class="posts" aria-label="Posts">
+  <h2 class="section-label">Latest writing</h2>
+  {%- if site.posts.size > 0 -%}
+  <ul class="post-list">
+    {%- for post in site.posts -%}
+    <li>
+      <a class="post-card" href="{{ post.url | relative_url }}">
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <span class="dot">&middot;</span>
+          <span>{% include reading-time.html content=post.content %}</span>
+        </div>
+        <h3 class="post-card-title">{{ post.title | escape }}</h3>
+        {%- assign summary = post.description | default: post.excerpt | strip_html | strip -%}
+        {%- if summary != "" -%}
+        <p class="post-card-excerpt">{{ summary | truncate: 180 }}</p>
+        {%- endif -%}
+        <span class="read-more">Read post <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- else -%}
+  <p class="muted">No posts yet.</p>
+  {%- endif -%}
+</section>

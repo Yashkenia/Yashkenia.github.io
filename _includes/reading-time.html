@@ -1,0 +1,5 @@
+{%- assign rt_words = include.content | strip_html | number_of_words -%}
+{%- assign rt_wpm = site.words_per_minute | default: 200 -%}
+{%- assign rt_minutes = rt_words | divided_by: rt_wpm -%}
+{%- if rt_minutes < 1 -%}{%- assign rt_minutes = 1 -%}{%- endif -%}
+{{ rt_minutes }} min read
