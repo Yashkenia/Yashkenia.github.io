@@ -1,24 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-labelledby="title desc">
-  <title id="title">Fixed code versus rolling code</title>
-  <desc id="desc">A fixed code is the same on every press, so an old recording still matches. A rolling code changes on every press, so an old recording is rejected.</desc>
-  <rect width="920" height="460" fill="#0e1116"/>
-  <text x="460" y="42" text-anchor="middle" fill="#f4f1ea" font-family="Georgia, serif" font-size="26">Same button press. Two different outcomes.</text>
-  <rect x="36" y="70" width="410" height="350" rx="16" fill="#1a1412" stroke="#c45c26" stroke-width="2"/>
-  <rect x="474" y="70" width="410" height="350" rx="16" fill="#12181a" stroke="#3d9a78" stroke-width="2"/>
-  <text x="241" y="108" text-anchor="middle" fill="#e8a07a" font-family="ui-sans-serif, sans-serif" font-size="18" font-weight="700">FIXED CODE</text>
-  <text x="679" y="108" text-anchor="middle" fill="#8fd0b4" font-family="ui-sans-serif, sans-serif" font-size="18" font-weight="700">ROLLING CODE</text>
-  <g font-family="ui-monospace, monospace" font-size="18" fill="#f4f1ea">
-    <text x="70" y="160">Press 1</text><text x="210" y="160" fill="#e8a07a">CODE  A</text>
-    <text x="70" y="200">Press 2</text><text x="210" y="200" fill="#e8a07a">CODE  A</text>
-    <text x="70" y="240">Press 3</text><text x="210" y="240" fill="#e8a07a">CODE  A</text>
-    <text x="508" y="160">Press 1</text><text x="648" y="160" fill="#8fd0b4">CODE  41</text>
-    <text x="508" y="200">Press 2</text><text x="648" y="200" fill="#8fd0b4">CODE  42</text>
-    <text x="508" y="240">Press 3</text><text x="648" y="240" fill="#8fd0b4">CODE  43</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" role="img" aria-labelledby="title desc">
+  <title id="title">Stick-figure flowchart: fixed code versus rolling code</title>
+  <desc id="desc">A stick figure presses a fob. On a fixed code the same label comes out every time and the car accepts it. On a rolling code the label changes and the car rejects the old one.</desc>
+  <rect width="880" height="520" fill="#fffef8"/>
+  <text x="440" y="36" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="22" fill="#222">stick-figure flowchart: what the car does with a saved press</text>
+  <g stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <circle cx="120" cy="92" r="16"/>
+    <line x1="120" y1="108" x2="120" y2="150"/>
+    <line x1="120" y1="122" x2="96" y2="140"/>
+    <line x1="120" y1="122" x2="150" y2="112"/>
+    <line x1="120" y1="150" x2="104" y2="180"/>
+    <line x1="120" y1="150" x2="136" y2="180"/>
+    <rect x="154" y="100" width="36" height="22"/>
   </g>
-  <text x="241" y="300" text-anchor="middle" fill="#b7b1a8" font-family="ui-sans-serif, sans-serif" font-size="15">A saved press is still A.</text>
-  <text x="241" y="326" text-anchor="middle" fill="#f0c7b0" font-family="ui-sans-serif, sans-serif" font-size="16" font-weight="700">Car accepts it later.</text>
-  <text x="679" y="300" text-anchor="middle" fill="#b7b1a8" font-family="ui-sans-serif, sans-serif" font-size="15">A saved press is already behind.</text>
-  <text x="679" y="326" text-anchor="middle" fill="#b7ead6" font-family="ui-sans-serif, sans-serif" font-size="16" font-weight="700">Car rejects it.</text>
-  <text x="241" y="388" text-anchor="middle" fill="#8a8178" font-family="ui-sans-serif, sans-serif" font-size="13">The code never moves.</text>
-  <text x="679" y="388" text-anchor="middle" fill="#8a8178" font-family="ui-sans-serif, sans-serif" font-size="13">Only a later code in the window counts.</text>
+  <text x="172" y="116" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="12" fill="#222">fob</text>
+  <text x="210" y="128" font-family="Comic Sans MS, Comic Sans, cursive" font-size="16" fill="#222">person presses button</text>
+  <line x1="300" y1="118" x2="360" y2="118" stroke="#222" stroke-width="2"/>
+  <polygon points="360,112 372,118 360,124" fill="#222"/>
+  <rect x="380" y="92" width="160" height="52" fill="#fff" stroke="#222" stroke-width="2"/>
+  <text x="460" y="114" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="15" fill="#222">does the code</text>
+  <text x="460" y="132" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="15" fill="#222">change?</text>
+  <line x1="430" y1="144" x2="250" y2="200" stroke="#222" stroke-width="2"/>
+  <polygon points="246,208 258,198 252,190" fill="#222"/>
+  <text x="300" y="168" font-family="Comic Sans MS, Comic Sans, cursive" font-size="14" fill="#222">no</text>
+  <line x1="500" y1="144" x2="640" y2="200" stroke="#222" stroke-width="2"/>
+  <polygon points="646,206 634,196 640,188" fill="#222"/>
+  <text x="560" y="168" font-family="Comic Sans MS, Comic Sans, cursive" font-size="14" fill="#222">yes</text>
+  <rect x="70" y="210" width="300" height="250" fill="#fff" stroke="#222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="500" y="210" width="320" height="250" fill="#fff" stroke="#222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="220" y="236" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="16" fill="#222">FIXED</text>
+  <text x="660" y="236" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="16" fill="#222">ROLLING</text>
+  <g font-family="Comic Sans MS, Comic Sans, cursive" font-size="15" fill="#222">
+    <text x="96" y="270">press 1 → A</text>
+    <text x="96" y="296">press 2 → A</text>
+    <text x="96" y="322">press 3 → A</text>
+    <text x="96" y="360">saved press is still A</text>
+    <text x="96" y="400">car: ok, open</text>
+    <text x="526" y="270">press 1 → 41</text>
+    <text x="526" y="296">press 2 → 42</text>
+    <text x="526" y="322">press 3 → 43</text>
+    <text x="526" y="360">saved press is behind</text>
+    <text x="526" y="400">car: no</text>
+  </g>
+  <g stroke="#222" stroke-width="2" fill="none">
+    <circle cx="250" cy="392" r="10"/>
+    <line x1="250" y1="402" x2="250" y2="428"/>
+    <line x1="250" y1="412" x2="236" y2="422"/>
+    <line x1="250" y1="412" x2="266" y2="420"/>
+    <line x1="250" y1="428" x2="240" y2="446"/>
+    <line x1="250" y1="428" x2="260" y2="446"/>
+    <circle cx="760" cy="392" r="10"/>
+    <line x1="760" y1="402" x2="760" y2="428"/>
+    <line x1="760" y1="412" x2="746" y2="424"/>
+    <line x1="760" y1="412" x2="774" y2="420"/>
+    <line x1="760" y1="428" x2="750" y2="446"/>
+    <line x1="760" y1="428" x2="770" y2="446"/>
+    <line x1="748" y1="386" x2="772" y2="404"/>
+    <line x1="772" y1="386" x2="748" y2="404"/>
+  </g>
 </svg>
