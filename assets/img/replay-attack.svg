@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">Stick-figure flowchart of a replay attack on a car key fob</title>
+  <desc id="desc">An owner presses the fob and the car unlocks. An attacker nearby records that same radio burst with a HackRF, then later plays the recording back at the car, and the car unlocks again because the code never changed.</desc>
+  <rect width="900" height="430" fill="#fffef8"/>
+  <text x="450" y="34" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="22" fill="#222">the whole attack in one glance: record now, replay later</text>
+
+  <!-- top row: normal use -->
+  <g stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <circle cx="70" cy="110" r="15"/>
+    <line x1="70" y1="125" x2="70" y2="163"/>
+    <line x1="70" y1="137" x2="50" y2="152"/>
+    <line x1="70" y1="137" x2="96" y2="128"/>
+    <line x1="70" y1="163" x2="56" y2="190"/>
+    <line x1="70" y1="163" x2="84" y2="190"/>
+    <rect x="100" y="118" width="30" height="18"/>
+  </g>
+  <text x="115" y="131" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="10" fill="#222">fob</text>
+  <text x="70" y="212" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="13" fill="#222">owner presses</text>
+
+  <!-- radio waves -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M150 120 q14 -12 28 0"/>
+    <path d="M150 128 q20 -18 40 0"/>
+  </g>
+  <text x="235" y="110" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="13" fill="#222">code "A"</text>
+  <line x1="200" y1="128" x2="280" y2="128" stroke="#222" stroke-width="2"/>
+  <polygon points="280,122 292,128 280,134" fill="#222"/>
+
+  <!-- car normal -->
+  <g stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M305 135 h70 l14 -22 h34 l16 22 h12"/>
+    <line x1="305" y1="135" x2="451" y2="135"/>
+    <circle cx="332" cy="135" r="9"/>
+    <circle cx="420" cy="135" r="9"/>
+  </g>
+  <text x="378" y="170" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="13" fill="#222">car: ok, open</text>
+
+  <!-- divider -->
+  <line x1="60" y1="238" x2="840" y2="238" stroke="#222" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+  <!-- attacker records (dashed) -->
+  <g stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <circle cx="70" cy="300" r="15"/>
+    <line x1="70" y1="315" x2="70" y2="353"/>
+    <line x1="70" y1="327" x2="50" y2="342"/>
+    <line x1="70" y1="327" x2="90" y2="342"/>
+    <line x1="70" y1="353" x2="56" y2="380"/>
+    <line x1="70" y1="353" x2="84" y2="380"/>
+    <!-- hat to mark the attacker -->
+    <path d="M52 290 h36 M58 290 l6 -12 h12 l6 12"/>
+  </g>
+  <text x="70" y="402" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="13" fill="#222">attacker, nearby</text>
+
+  <!-- hackrf box recording -->
+  <rect x="150" y="280" width="120" height="48" fill="#fff" stroke="#222" stroke-width="2"/>
+  <text x="210" y="300" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="12" fill="#222">HackRF</text>
+  <text x="210" y="318" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="12" fill="#222">records "A"</text>
+  <line x1="130" y1="304" x2="148" y2="304" stroke="#222" stroke-width="2"/>
+
+  <line x1="270" y1="304" x2="340" y2="304" stroke="#222" stroke-width="2"/>
+  <polygon points="340,298 352,304 340,310" fill="#222"/>
+  <text x="310" y="296" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="12" fill="#222">later...</text>
+
+  <!-- plays back -->
+  <rect x="356" y="280" width="128" height="48" fill="#fff" stroke="#222" stroke-width="2"/>
+  <text x="420" y="300" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="12" fill="#222">plays "A"</text>
+  <text x="420" y="318" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="12" fill="#222">back on air</text>
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M500 296 q14 -12 28 0"/>
+    <path d="M500 304 q20 -18 40 0"/>
+  </g>
+  <line x1="484" y1="320" x2="560" y2="320" stroke="#222" stroke-width="2"/>
+  <polygon points="560,314 572,320 560,326" fill="#222"/>
+
+  <!-- car opens again -->
+  <g stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M585 320 h70 l14 -22 h34 l16 22 h12"/>
+    <line x1="585" y1="320" x2="731" y2="320"/>
+    <circle cx="612" cy="320" r="9"/>
+    <circle cx="700" cy="320" r="9"/>
+  </g>
+  <text x="658" y="356" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="13" fill="#222">car: ok, open (!)</text>
+  <text x="658" y="300" text-anchor="middle" font-family="Comic Sans MS, Comic Sans, cursive" font-size="12" fill="#b00">same code, trusted</text>
+</svg>

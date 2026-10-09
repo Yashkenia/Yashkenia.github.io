@@ -16,6 +16,10 @@ The old way to unlock a car was boring and safe: a metal key in a metal lock. Ke
 
 In my testing that frequency sat around **433.9 MHz**, a common band for key fobs. And here's the catch that makes the whole attack possible: on the cars I looked at, the fob sent essentially the *same* code every time. If the code never changes, then anything that can record radio and play it back can impersonate the key.
 
+The whole attack fits in one picture: record the owner's press, then play it back later.
+
+![Stick-figure flowchart: an owner presses the fob and the car opens; an attacker nearby records the same radio burst with a HackRF and later replays it, and the car opens again because the code never changed.](/assets/img/replay-attack.svg)
+
 ## The gear: SDR, GNU Radio, and a HackRF
 
 Software-Defined Radio (SDR) is the idea that a radio can be defined in software instead of fixed hardware. Instead of a circuit built to do one thing, you get a general-purpose radio and write the logic.
@@ -41,6 +45,8 @@ File Sink        ->  writes the captured signal to disk
 
 The **Osmocom Source** is the abstraction layer that talks to the HackRF and tells it to start receiving. The **Waterfall Sink** draws the spectrum in real time, so when I pressed the fob button, a bright peak jumped up at the key's frequency. That peak *is* the key's transmission. The file sink saved the raw signal so I could replay it later.
 
+![Stick-figure flowchart of the capture flowgraph: pressing the fob sends a burst at about 433.9 MHz into the HackRF (an Osmocom Source block); the signal splits to a Waterfall Sink that shows a peak on screen and a File Sink that saves it to disk.](/assets/img/capture-flowgraph.svg)
+
 ## Step two: replaying it at the car
 
 Replay is capture in reverse. The flowgraph reads the saved signal back from the file and pushes it out through the HackRF, with a **Throttle** block to emit it at a steady, repeated rate so it cleanly matches the frequency the car expects.
@@ -48,6 +54,8 @@ Replay is capture in reverse. The flowgraph reads the saved signal back from the
 ```text
 File Source  ->  Throttle  ->  Osmocom Sink (HackRF, transmit)
 ```
+
+![Stick-figure flowchart of the replay flowgraph: a File Source reads the saved signal, a Throttle block paces it, an Osmocom Sink transmits it through the HackRF on the air, and the car unlocks.](/assets/img/replay-flowgraph.svg)
 
 Point the radio at the car, run the graph, and the recorded "unlock" plays back on the air. The car hears a code it trusts and opens. That's a **replay attack**: no cloning, no cracking, just record and re-send. The same approach extends to **man-in-the-middle** (sitting between fob and car) and, with enough noise on the band, **denial of service** by jamming the fob so the real key stops working.
 
