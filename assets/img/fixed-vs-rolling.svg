@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-labelledby="title desc">
+  <title id="title">Fixed code versus rolling code</title>
+  <desc id="desc">A fixed code is the same on every press, so an old recording still matches. A rolling code changes on every press, so an old recording is rejected.</desc>
+  <rect width="920" height="460" fill="#0e1116"/>
+  <text x="460" y="42" text-anchor="middle" fill="#f4f1ea" font-family="Georgia, serif" font-size="26">Same button press. Two different outcomes.</text>
+  <rect x="36" y="70" width="410" height="350" rx="16" fill="#1a1412" stroke="#c45c26" stroke-width="2"/>
+  <rect x="474" y="70" width="410" height="350" rx="16" fill="#12181a" stroke="#3d9a78" stroke-width="2"/>
+  <text x="241" y="108" text-anchor="middle" fill="#e8a07a" font-family="ui-sans-serif, sans-serif" font-size="18" font-weight="700">FIXED CODE</text>
+  <text x="679" y="108" text-anchor="middle" fill="#8fd0b4" font-family="ui-sans-serif, sans-serif" font-size="18" font-weight="700">ROLLING CODE</text>
+  <g font-family="ui-monospace, monospace" font-size="18" fill="#f4f1ea">
+    <text x="70" y="160">Press 1</text><text x="210" y="160" fill="#e8a07a">CODE  A</text>
+    <text x="70" y="200">Press 2</text><text x="210" y="200" fill="#e8a07a">CODE  A</text>
+    <text x="70" y="240">Press 3</text><text x="210" y="240" fill="#e8a07a">CODE  A</text>
+    <text x="508" y="160">Press 1</text><text x="648" y="160" fill="#8fd0b4">CODE  41</text>
+    <text x="508" y="200">Press 2</text><text x="648" y="200" fill="#8fd0b4">CODE  42</text>
+    <text x="508" y="240">Press 3</text><text x="648" y="240" fill="#8fd0b4">CODE  43</text>
+  </g>
+  <text x="241" y="300" text-anchor="middle" fill="#b7b1a8" font-family="ui-sans-serif, sans-serif" font-size="15">A saved press is still A.</text>
+  <text x="241" y="326" text-anchor="middle" fill="#f0c7b0" font-family="ui-sans-serif, sans-serif" font-size="16" font-weight="700">Car accepts it later.</text>
+  <text x="679" y="300" text-anchor="middle" fill="#b7b1a8" font-family="ui-sans-serif, sans-serif" font-size="15">A saved press is already behind.</text>
+  <text x="679" y="326" text-anchor="middle" fill="#b7ead6" font-family="ui-sans-serif, sans-serif" font-size="16" font-weight="700">Car rejects it.</text>
+  <text x="241" y="388" text-anchor="middle" fill="#8a8178" font-family="ui-sans-serif, sans-serif" font-size="13">The code never moves.</text>
+  <text x="679" y="388" text-anchor="middle" fill="#8a8178" font-family="ui-sans-serif, sans-serif" font-size="13">Only a later code in the window counts.</text>
+</svg>

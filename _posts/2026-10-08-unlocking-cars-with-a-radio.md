@@ -61,6 +61,8 @@ I also ran the same attack against a **2014 Hyundai Xcent**. The capture and rep
 
 None of this is clever cryptography on my end. It worked because the fobs used **fixed codes**. A code that never changes can always be replayed.
 
+![Fixed code stays the same on every press and is still accepted later. Rolling code advances, so an old press is rejected.](/assets/img/fixed-vs-rolling.svg)
+
 The fix has existed for decades, and good cars already use it:
 
 - **Rolling codes (hopping codes).** The fob and car share a cryptographically secure sequence. Every button press sends the *next* code, and the car accepts only codes ahead of the last one it saw (typically within a window of about 256, in case a few presses happen out of range). A replayed old code is simply rejected.
