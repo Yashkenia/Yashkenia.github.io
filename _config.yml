@@ -1,9 +1,9 @@
 # Site settings
-title: "Yash | VAporX"
-brand: "Yash"
+title: "VaporX"
+brand: "VaporX"
 description: "Exploit dev, AI bots, and Counter-Strike. Learning in public."
-author: Yash
-url: "https://yashkenia.github.io"
+author: VaporX
+url: "https://vaporx.dev"
 baseurl: ""
 lang: en
 timezone: Asia/Kolkata
@@ -14,7 +14,7 @@ github_username: Yashkenia
 twitter:
   username: VAporXdc
 social:
-  name: Yash
+  name: VaporX
   links:
     - https://x.com/VAporXdc
     - https://github.com/Yashkenia
