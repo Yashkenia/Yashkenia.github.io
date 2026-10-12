@@ -1,10 +1,10 @@
 ---
 title: About
 permalink: /about/
-description: "About Yash: exploit dev, AI bots, and Counter-Strike."
+description: "About VaporX: exploit dev, AI bots, and Counter-Strike."
 ---
 
-Hi, I'm Yash. I'm based in Mumbai.
+Hi, I'm VaporX.
 
 I'm **learning exploit development in public**. This blog is where I write down what I'm figuring out, including the parts I get wrong.
 
