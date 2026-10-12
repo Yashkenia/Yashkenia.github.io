@@ -10,14 +10,14 @@ timezone: Asia/Kolkata
 
 # Social (used in nav/footer and SEO)
 x_username: VAporXdc
-github_username: Yashkenia
+github_username: VAporXdc
 twitter:
   username: VAporXdc
 social:
   name: VaporX
   links:
     - https://x.com/VAporXdc
-    - https://github.com/Yashkenia
+    - https://github.com/VAporXdc
 
 # Build (works with GitHub Pages' built-in Jekyll build, no Actions needed)
 markdown: kramdown
