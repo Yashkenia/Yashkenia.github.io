@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-label="Six Dust2 T pistol patterns">
+  <rect width="960" height="720" fill="#0d0d0d"/>
+  <text x="32" y="42" fill="#f5c518" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22" font-weight="700">Dust2 T Pistol — Six Patterns</text>
+  <text x="32" y="68" fill="#9a9a9a" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Every elite hit is a variation on these. Mid is the swing piece.</text>
+  <!-- 6 cards -->
+  <g font-family="ui-sans-serif,system-ui,sans-serif">
+    <!-- 1 -->
+    <rect x="32" y="100" width="280" height="170" rx="10" fill="#161616" stroke="#2a2a2a"/>
+    <text x="52" y="132" fill="#f5c518" font-size="16" font-weight="700">1. Fast B</text>
+    <text x="52" y="158" fill="#e8e8e8" font-size="13">Five through upper tunnels</text>
+    <text x="52" y="180" fill="#9a9a9a" font-size="12">Flash doors · smoke CT/window</text>
+    <text x="52" y="200" fill="#9a9a9a" font-size="12">Molly back plat / car</text>
+    <text x="52" y="230" fill="#c9a227" font-size="12">Wins on speed · dies to 3-B stack</text>
+    <!-- 2 -->
+    <rect x="340" y="100" width="280" height="170" rx="10" fill="#161616" stroke="#2a2a2a"/>
+    <text x="360" y="132" fill="#f5c518" font-size="16" font-weight="700">2. Mid-to-B split</text>
+    <text x="360" y="158" fill="#e8e8e8" font-size="13">3 tunnels + 2 xbox/mid</text>
+    <text x="360" y="180" fill="#9a9a9a" font-size="12">Smoke mid doors, cut rotator</text>
+    <text x="360" y="200" fill="#9a9a9a" font-size="12">Push lower or CT-mid</text>
+    <text x="360" y="230" fill="#c9a227" font-size="12">Best vs early mid rotate</text>
+    <!-- 3 -->
+    <rect x="648" y="100" width="280" height="170" rx="10" fill="#161616" stroke="#2a2a2a"/>
+    <text x="668" y="132" fill="#f5c518" font-size="16" font-weight="700">3. Short A (cat)</text>
+    <text x="668" y="158" fill="#e8e8e8" font-size="13">2–3 catwalk, 1 long, 1 mid</text>
+    <text x="668" y="180" fill="#9a9a9a" font-size="12">Flash short · smoke CT</text>
+    <text x="668" y="200" fill="#9a9a9a" font-size="12">Plant default · Glock close</text>
+    <text x="668" y="230" fill="#c9a227" font-size="12">Suited to Glock spray</text>
+    <!-- 4 -->
+    <rect x="32" y="300" width="280" height="170" rx="10" fill="#161616" stroke="#2a2a2a"/>
+    <text x="52" y="332" fill="#f5c518" font-size="16" font-weight="700">4. Long A take</text>
+    <text x="52" y="358" fill="#e8e8e8" font-size="13">Flash + kevlar entry long</text>
+    <text x="52" y="380" fill="#9a9a9a" font-size="12">Smoke cross for blue/CT</text>
+    <text x="52" y="400" fill="#9a9a9a" font-size="12">Rest join through long</text>
+    <text x="52" y="430" fill="#c9a227" font-size="12">Slow · aim + kevlar heavy</text>
+    <!-- 5 -->
+    <rect x="340" y="300" width="280" height="170" rx="10" fill="#161616" stroke="#2a2a2a"/>
+    <text x="360" y="332" fill="#f5c518" font-size="16" font-weight="700">5. A split</text>
+    <text x="360" y="358" fill="#e8e8e8" font-size="13">2 long · 2 short · 1 mid lurk</text>
+    <text x="360" y="380" fill="#9a9a9a" font-size="12">Classic crossfire hit</text>
+    <text x="360" y="400" fill="#9a9a9a" font-size="12">Forces A CTs to pick a side</text>
+    <text x="360" y="430" fill="#c9a227" font-size="12">Strong vs 2–1–2</text>
+    <!-- 6 -->
+    <rect x="648" y="300" width="280" height="170" rx="10" fill="#161616" stroke="#2a2a2a"/>
+    <text x="668" y="332" fill="#f5c518" font-size="16" font-weight="700">6. Fake and fold</text>
+    <text x="668" y="358" fill="#e8e8e8" font-size="13">Noise one site, hit the other</text>
+    <text x="668" y="380" fill="#9a9a9a" font-size="12">Often B noise → late A</text>
+    <text x="668" y="400" fill="#9a9a9a" font-size="12">Needs prior CT read</text>
+    <text x="668" y="430" fill="#c9a227" font-size="12">IGL-dependent</text>
+  </g>
+  <rect x="32" y="500" width="896" height="100" rx="10" fill="#161616" stroke="#f5c518" stroke-opacity="0.4"/>
+  <text x="52" y="538" fill="#f5c518" font-family="ui-sans-serif,system-ui,sans-serif" font-size="15" font-weight="700">Mid is the swing piece</text>
+  <text x="52" y="564" fill="#e8e8e8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Kevlar mid early → play late, pick the site after rotates. Skip mid → bet on speed.</text>
+  <text x="52" y="586" fill="#9a9a9a" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12">2026 bomb rework: CTs can survive detonation behind walls — hunt the saver on round 2.</text>
+  <text x="32" y="640" fill="#5a5a5a" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12">VaporX · tactical diagram · illustrative playbook summary</text>
+</svg>
