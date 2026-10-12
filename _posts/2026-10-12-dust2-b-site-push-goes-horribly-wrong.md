@@ -1,6 +1,6 @@
 ---
 title: "Dust2 B Site Push: Goes Horribly Wrong"
-date: 2026-10-12 20:00:00 +0530
+date: 2026-10-12 16:30:00 +0530
 description: "A short CS2 comic: five Phoenix Ts try Dust2 B and the round ends exactly how you’d expect."
 categories: [cs2, dust2, comic]
 tags: [cs2, dust2, comic, memes]
