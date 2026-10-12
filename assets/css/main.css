@@ -317,16 +317,21 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 }
 .prose pre code { background: none; border: 0; padding: 0; font-size: inherit; color: #d0d0d0; }
 
-/* Rouge syntax highlighting (muted, silver-leaning) */
-.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #6a6a6a; font-style: italic; }
-.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr { color: #c7b9ff; }
-.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sd { color: #9fd3a8; }
-.highlight .n, .highlight .na, .highlight .nv { color: #d8d8d8; }
-.highlight .nf { color: #9ac7e1; }
-.highlight .nc, .highlight .nn { color: #e6c98a; }
-.highlight .mi, .highlight .mf, .highlight .m { color: #e0a98a; }
-.highlight .o, .highlight .ow, .highlight .p { color: #b0b0b0; }
-.highlight .gp { color: #6a6a6a; }
+/* Rouge syntax highlighting (vivid on dark) */
+.highlight { background: #0d0d0d; }
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs, .highlight .cp, .highlight .cd { color: #6b7a8f; font-style: italic; }
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .kc { color: #ff79c6; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sd, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .ss, .highlight .si, .highlight .se, .highlight .sc { color: #a5e075; }
+.highlight .n, .highlight .nx, .highlight .ni { color: #e0e0e0; }
+.highlight .na, .highlight .nt, .highlight .py { color: #7fdbff; }
+.highlight .nv, .highlight .vi, .highlight .vg, .highlight .vc { color: #ffb86c; }
+.highlight .nf, .highlight .fm, .highlight .nb, .highlight .bp { color: #61afef; }
+.highlight .nc, .highlight .nn, .highlight .ne, .highlight .nd { color: #e5c07b; }
+.highlight .m, .highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo, .highlight .il { color: #f78c6c; }
+.highlight .o, .highlight .ow { color: #89ddff; }
+.highlight .p { color: #b0b0b0; }
+.highlight .gp { color: #6b7a8f; }
+.highlight .err { color: #ff5555; }
 
 /* ---------- Post footer ---------- */
 .post-footer {

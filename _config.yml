@@ -1,7 +1,7 @@
 # Site settings
 title: "VaporX"
 brand: "VaporX"
-description: "Exploit dev, AI bots, and Counter-Strike. Learning in public."
+description: "Exploit dev, threat intel, APT malware analysis and reverse engineering, AI bots, and Counter-Strike. Learning in public."
 author: VaporX
 url: "https://vaporx.dev"
 baseurl: ""
