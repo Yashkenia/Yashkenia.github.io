@@ -1,8 +1,8 @@
-# Yashkenia.github.io
+# VaporX.github.io
 
-My personal blog: exploit dev, AI bots, and Counter-Strike. Learning in public.
+Personal blog: exploit dev, AI bots, and Counter-Strike. Learning in public.
 
-Live at **https://yashkenia.github.io**
+Live at **https://vaporx.dev**
 
 It's a plain [Jekyll](https://jekyllrb.com) site with a custom layout (no theme). GitHub Pages builds it automatically on every push to `main`, so you don't need GitHub Actions or any local setup.
 
