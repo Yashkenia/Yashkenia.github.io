@@ -273,6 +273,8 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 .prose a:hover { text-decoration-color: #cfcfcf; }
 .prose strong,
 .prose b { color: var(--accent-red); font-weight: 650; }
+/* label-style bolds (play names, "What to expect" lines, list leads) stay silver */
+.prose strong.label { color: var(--text-strong); font-weight: 600; }
 .prose a strong, .prose a b,
 .prose h1 strong, .prose h2 strong, .prose h3 strong, .prose h4 strong { color: inherit; font-weight: inherit; }
 .prose mark {
