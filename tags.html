@@ -1,0 +1,12 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+description: "Every VaporX post grouped by tag: malware analysis, threat intel, CS2, Dust2 and more."
+---
+{%- assign tags = site.tags | sort -%}
+<p>{% for t in tags %}<a href="#{{ t[0] | slugify }}">#{{ t[0] }}</a> ({{ t[1].size }}){% unless forloop.last %} &middot; {% endunless %}{% endfor %}</p>
+{% for t in tags %}
+<h2 id="{{ t[0] | slugify }}">#{{ t[0] }}</h2>
+<ul class="taxonomy-list">{% for post in t[1] %}<li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> <small>{{ post.date | date: "%b %-d, %Y" }}</small></li>{% endfor %}</ul>
+{% endfor %}

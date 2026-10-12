@@ -1,7 +1,8 @@
 ---
 title: "Dust2 T-Side Pistols: The 2026 Elite Playbook"
 date: 2026-10-12 16:00:00 +0530
-description: "Dust2 T pistol fundamentals, six elite patterns, and team-by-team reads of NAVI, Vitality, Falcons, FaZe, Spirit, and FURIA in 2026 — plus what to steal for your own stack."
+description: "Dust2 T pistol fundamentals, six elite patterns, and 2026 reads of NAVI, Vitality, Falcons, FaZe, Spirit, and FURIA, plus what to steal for your stack."
+image: /assets/img/dust2-default-opening.png
 categories: [cs2, dust2, strategy, pistol]
 tags: [cs2, dust2, strategy, pistol]
 ---

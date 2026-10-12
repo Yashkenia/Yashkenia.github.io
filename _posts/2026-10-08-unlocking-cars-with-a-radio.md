@@ -1,12 +1,11 @@
 ---
-title: "Unlocking Cars With a Radio: My SDR Keyless-Entry Research"
+title: "Unlocking Cars With a Radio: SDR Keyless Research"
+image: /assets/img/car-hacking-hero.jpg
 date: 2026-10-08 14:30:00 +0530
 description: "How I used a HackRF and GNU Radio to capture and replay car key-fob signals, which cars fell to it, and the simple fix every car should already have."
 ---
 
-![A car at night under neon light, its key-fob signal being intercepted as glowing radio waves](/assets/img/car-hacking-hero.jpg)
-
-Back in 2018-19 I spent a stretch of nights in a parking lot with a laptop, a little orange radio board, and a car key. By the end of it I could unlock cars I had permission to test without ever touching their keys. I wrote it up as a paper, [*Cyber Attacks on Smart Cars using SDR*](https://irjet.net/archives/V6/i12/IRJET-V6I1219.pdf), published in **IRJET (Volume 6, Issue 12, Dec 2019)**. This post is the human version of that paper, plus the hands-on work that lives in my [Car-Hacking repo](https://github.com/Yashkenia/Car-Hacking).
+Back in 2018-19 I spent a stretch of nights in a parking lot with a laptop, a little orange radio board, and a car key. By the end of it I could unlock cars I had permission to test without ever touching their keys. I wrote it up as a paper, [*Cyber Attacks on Smart Cars using SDR*](https://irjet.net/archives/V6/i12/IRJET-V6I1219.pdf), published in **IRJET (Volume 6, Issue 12, Dec 2019)**. This post is the human version of that paper, plus the hands-on work that lives in my [Car-Hacking repo](https://github.com/VAporXdc/Car-Hacking).
 
 A quick, important note before anything else: this was **controlled research** on vehicles I was allowed to test, done to show a real weakness so it can be fixed. Don't do this to cars you don't own. It's illegal, and that's not the point.
 
@@ -63,7 +62,7 @@ Point the radio at the car, run the graph, and the recorded "unlock" plays back 
 
 The formal results in the paper were on three cars, with the Indian Honda City i-Vtec as the main test subject, plus the Toyota Innova Crysta and the Maruti Wagon R. On all three, **capture-and-replay worked**.
 
-I also ran the same attack against a **2014 Hyundai Xcent**. The capture and replay flowgraphs for it (`xcentcap.grc` and `xcentreplay.grc`) are in the [repo](https://github.com/Yashkenia/Car-Hacking) alongside the Honda and Wagon R graphs. Same method, same result.
+I also ran the same attack against a **2014 Hyundai Xcent**. The capture and replay flowgraphs for it (`xcentcap.grc` and `xcentreplay.grc`) are in the [repo](https://github.com/VAporXdc/Car-Hacking) alongside the Honda and Wagon R graphs. Same method, same result.
 
 ## Why it worked, and the fix
 
@@ -82,4 +81,4 @@ The **threat model** is worth stating plainly. An attacker who owns the fob's ra
 
 The lesson that stuck with me: convenience features quietly become attack surface. A key fob feels like a small thing, but it's a radio protocol, and radio protocols need the same rigor as anything else. A fixed code is a **password you broadcast** to everyone nearby.
 
-If you want the formal details, read the [full paper](https://irjet.net/archives/V6/i12/IRJET-V6I1219.pdf). If you want the actual GNU Radio flowgraphs and code, they're in the [Car-Hacking repo](https://github.com/Yashkenia/Car-Hacking). Questions or corrections, find me on [X](https://x.com/VAporXdc).
+If you want the formal details, read the [full paper](https://irjet.net/archives/V6/i12/IRJET-V6I1219.pdf). If you want the actual GNU Radio flowgraphs and code, they're in the [Car-Hacking repo](https://github.com/VAporXdc/Car-Hacking). Questions or corrections, find me on [X](https://x.com/VAporXdc).

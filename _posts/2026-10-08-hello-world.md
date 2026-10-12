@@ -22,7 +22,7 @@ I play CS2, so expect the occasional take, clip, or thing I learned from grindin
 
 ## Project writeups
 
-I also want to go back and properly write up older projects. The first one on the list is my [Car-Hacking](https://github.com/Yashkenia/Car-Hacking) repo, which uses software-defined radio (a HackRF) and Python to capture car key fob signals and explore replay, man-in-the-middle, and denial-of-service attacks.
+I also want to go back and properly write up older projects. The first one on the list is my [Car-Hacking](https://github.com/VAporXdc/Car-Hacking) repo, which uses software-defined radio (a HackRF) and Python to capture car key fob signals and explore replay, man-in-the-middle, and denial-of-service attacks.
 
 ```python
 # Rough idea of what's coming in that writeup
@@ -31,4 +31,4 @@ for step in steps:
     print(f"[+] {step}")
 ```
 
-If any of this sounds interesting, follow me on [X](https://x.com/VAporXdc) or check out my [GitHub](https://github.com/Yashkenia). More soon.
+If any of this sounds interesting, follow me on [X](https://x.com/VAporXdc) or check out my [GitHub](https://github.com/VAporXdc). More soon.

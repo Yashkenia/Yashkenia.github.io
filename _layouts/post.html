@@ -10,10 +10,31 @@ layout: default
     </div>
     <h1 class="post-title">{{ page.title | escape }}</h1>
     {%- if page.description -%}<p class="post-lede">{{ page.description | escape }}</p>{%- endif -%}
+    {%- if page.image -%}
+    <p class="post-hero"><img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}" /></p>
+    {%- endif -%}
   </header>
   <div class="prose">
     {{ content }}
   </div>
+  {%- assign related = site.posts | where_exp: "p", "p.url != page.url" -%}
+  {%- if page.previous or page.next or related.size > 0 -%}
+  <nav class="post-related" aria-label="Related posts">
+    <h2 class="section-label">More writing</h2>
+    <ul class="related-list">
+      {%- if page.previous -%}<li><a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title | escape }}</a></li>{%- endif -%}
+      {%- if page.next -%}<li><a href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} &rarr;</a></li>{%- endif -%}
+      {%- assign shown = 0 -%}
+      {%- for p in related -%}
+        {%- if shown >= 3 -%}{%- break -%}{%- endif -%}
+        {%- if page.previous and p.url == page.previous.url -%}{%- continue -%}{%- endif -%}
+        {%- if page.next and p.url == page.next.url -%}{%- continue -%}{%- endif -%}
+        {%- assign common = p.categories | where_exp: "c", "page.categories contains c" -%}
+        {%- if common.size > 0 -%}<li><a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a></li>{%- assign shown = shown | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </nav>
+  {%- endif -%}
   <footer class="post-footer">
     <a class="back-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">&larr;</span> All posts</a>
     <a class="back-link" href="https://x.com/{{ site.x_username }}" target="_blank" rel="noopener">Follow on X <span aria-hidden="true">&rarr;</span></a>

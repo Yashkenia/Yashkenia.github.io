@@ -429,3 +429,13 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 .prose blockquote > p:first-child strong { color: var(--text-strong); letter-spacing: .02em; }
 .prose li > p { margin: 0; }
 .prose li { overflow-wrap: anywhere; }
+
+/* featured image + related posts */
+.post-hero { margin: 1.5rem 0 0; }
+.post-hero img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.post-related { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #2a2a2a; }
+.related-list { list-style: none; padding: 0; margin: .75rem 0 0; }
+.related-list li { margin: .4rem 0; }
+.related-list a { color: #cfcfcf; text-decoration: none; }
+.related-list a:hover { color: #fff; text-decoration: underline; }
+.taxonomy-list { list-style: none; padding: 0; }
