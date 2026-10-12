@@ -15,4 +15,4 @@ Outside of that, I play **Counter-Strike 2**.
 ### Find me
 
 - X: [@VAporXdc](https://x.com/VAporXdc)
-- GitHub: [Yashkenia](https://github.com/Yashkenia)
+- GitHub: [VAporXdc](https://github.com/VAporXdc)
