@@ -11,8 +11,11 @@ timezone: Asia/Kolkata
 # Social (used in nav/footer and SEO)
 x_username: VAporXdc
 github_username: VAporXdc
+logo: /assets/img/mark.svg
+
 twitter:
   username: VAporXdc
+  card: summary_large_image
 social:
   name: VaporX
   links:
@@ -31,6 +34,7 @@ words_per_minute: 200
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   - scope:
@@ -38,11 +42,13 @@ defaults:
       type: posts
     values:
       layout: post
+      image: /assets/img/og-default.png
   - scope:
       path: ""
       type: pages
     values:
       layout: page
+      image: /assets/img/og-default.png
 
 exclude:
   - README.md
