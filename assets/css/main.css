@@ -16,8 +16,8 @@
   --accent-red: #e05a5a;     /* keyword highlight, 5.45:1 on --bg (WCAG AA) */
   --silver-gradient: linear-gradient(180deg, #f5f5f5 0%, #c9c9c9 55%, #8f8f8f 100%);
 
-  --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Instrument Serif", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Geist", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   --measure: 700px;
@@ -150,8 +150,8 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 }
 .hero-title {
   font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: clamp(2.6rem, 7vw, 4rem);
+  font-weight: 400;
+  font-size: clamp(2.9rem, 7.5vw, 4.5rem);
   line-height: 1.02;
   letter-spacing: -0.02em;
   margin: 0 0 18px;
@@ -214,8 +214,8 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 .post-meta .dot { color: #3a3a3a; }
 .post-card-title {
   font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.75rem;
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: var(--text-strong);
@@ -240,8 +240,8 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 .post-header { padding: 16px 0 36px; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
 .post-title {
   font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: clamp(2rem, 5vw, 2.85rem);
+  font-weight: 400;
+  font-size: clamp(2.3rem, 5.6vw, 3.25rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--text-strong);
@@ -254,8 +254,8 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 .prose > * + * { margin-top: 1.35em; }
 .prose h2 {
   font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1.65rem;
+  font-weight: 400;
+  font-size: 1.95rem;
   letter-spacing: -0.01em;
   color: var(--text-strong);
   margin-top: 2em;
@@ -263,8 +263,8 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 }
 .prose h3 {
   font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1.3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
   color: var(--text-strong);
   margin-top: 1.6em;
 }
