@@ -393,3 +393,39 @@ a:hover { color: #fff; text-decoration-color: #9a9a9a; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- Tables (GFM pipe tables in posts) ---------- */
+.prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1.4em 0;
+  font-size: .92rem;
+  line-height: 1.5;
+  -webkit-overflow-scrolling: touch;
+}
+.prose th, .prose td {
+  border: 1px solid var(--border-strong);
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+  color: var(--text);
+}
+.prose th {
+  background: var(--bg-elevated);
+  color: var(--text-strong);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.prose tbody tr:nth-child(even) td { background: rgba(255, 255, 255, 0.02); }
+.prose td code, .prose th code { white-space: nowrap; }
+
+/* ---------- Lists inside blockquotes / callouts ---------- */
+.prose blockquote p, .prose blockquote li { font-style: normal; color: var(--text); }
+.prose blockquote ul, .prose blockquote ol { margin: .4em 0 .6em; padding-left: 1.3em; }
+.prose blockquote > p:first-child strong { color: var(--text-strong); letter-spacing: .02em; }
+.prose li > p { margin: 0; }
+.prose li { overflow-wrap: anywhere; }
