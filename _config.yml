@@ -42,13 +42,13 @@ defaults:
       type: posts
     values:
       layout: post
-      image: /assets/img/og-default.png
+      image: /assets/img/og-default-v2.png
   - scope:
       path: ""
       type: pages
     values:
       layout: page
-      image: /assets/img/og-default.png
+      image: /assets/img/og-default-v2.png
 
 exclude:
   - README.md
